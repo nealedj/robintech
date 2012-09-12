@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %} - Contact{% endblock %}
+{% block main_body %}
+
+
+
+<div class="header page">
+    <h1>Contact Me</h1>
+</div>
+
+<div id='signup' class="padding">
+    <div class='left'>
+        <form action='{% url core-contact %}' method="post" id='signup_form'>
+            {% csrf_token %}
+            <h2><span>Contact form</span></h2>
+            <p>
+                <label class="control-label" for='{{ form.email.id_for_label }}'>Email address: </label>
+                <input type="text" class="text_field required email" name='email' id='{{ form.email.id_for_label }}' />
+            </p>
+            <p>
+                <label class='control-label' for='{{ form.name.id_for_label }}'>Name: </label>
+                <input type="text" class="text_field required" name='name' id='{{ form.name.id_for_label }}' />
+            </p>
+            <p>
+                <label class="control-label" for='{{ form.message.id_for_label }}'>Message: </label>
+                <textarea rows="10" cols="40" class="text_field required" name='message' id='{{ form.message.id_for_label }}'></textarea>
+            </p>
+            <div class="clear"></div>
+            <div class="send_form">
+                <input type='submit' class="button submit" value="Send" />
+            </div>
+        </form>
+    </div>
+    <div class="right">
+        <div class="sidebar_box">
+            <h4>Contacting me</h4>
+            <p>
+                If you're interested in getting in touch then please submit form below. <br/>
+                Please, no recruitment agencies. If I need you then I'll be in touch!
+            </p>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+{% endblock %}

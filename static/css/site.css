@@ -1,0 +1,31 @@
+
+div#experience .job {
+    background: url('../img/hr.gif') repeat-x bottom;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+div#v span.meta {
+    display: block;
+    margin: 5px 0px 5px 0px;
+    color: #999;
+}
+div#experience .job_img {
+    float:right;
+    border-top: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
+}
+div#experience .job_img img{ padding: 10px; }
+div#experience .content {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+div#experience .read_more { float: right; margin-top: -10px; }
+div#experience a.comments {
+    background: url('../img/icons/comment.png') no-repeat top left;
+    padding-left: 22px;
+    float: left;
+    font-size: 12px;
+}
+#experience .job ul{
+    padding-left: 40px;
+}

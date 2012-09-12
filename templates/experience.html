@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load media %}
+{% block title %} - Experience{% endblock %}
+{% block main_body %}
+
+<div class="header page">
+    <h1>Experience</h1>
+</div>
+
+<div id="experience" class='padding'>
+
+    <p>
+        See below a summary of my recent jobs. I've tried to be comprehensive in the lists of skills used in each role but in addition to the below I
+        have always used the standard set of front-end skills (HTML, CSS, Javascript).
+    </p>
+
+    <div class='job'>
+        <h4>May 2012 - Present: Freelance Django Developer at Potato Ltd (Google Vendor)</h4>
+        <div class="job_img">
+            <img src="{% media_url 'img/ggl_logo.png' %}" width="200" />
+            <img src="{% media_url 'img/potato_logo.png'%}" />
+        </div>
+
+        <p>
+            Employed on a freelance basis by Potato to work as part of Google's Creative Labs. I develop web applications for Google to run on
+            Google App Engine.
+        </p>
+        <ul>
+            <li>Python 2.7</li>
+            <li>Django 1.3</li>
+            <li>Google App Engine</li>
+            <li>Git</li>
+        </ul>
+    </div>
+
+    <div class='job'>
+        <h4>May 2011 – May 2012: Web Developer at The Number UK Ltd</h4>
+        <div class="job_img">
+            <img src="{% media_url 'img/118118.jpg'%}" />
+        </div>
+        <p>
+            Initially employed by The Number to continue development of their ASP.NET MVC website. I soon became heavily involved in a new project to construct a
+            cloud-hosted global search API to be used across all parts of The Number’s parent company, Knowledge Generation Bureau (kgb). During this time I
+            became heavily involved with Python, Django, MongoDB, RabbitMQ and Elastic Search whilst working in a medium-sized Scrum team. This project involved
+            working with teams across the world to ensure that client applications were developed to best harness the API. I also wrote a durable,
+            multi-threaded distribution mechanism to keep the data reliable and correctly indexed from the SQL server reference databases to MongoDB and Elastic.
+        </p>
+        <ul>
+            <li>Python 2.7</li>
+            <li>Django 1.3</li>
+            <li>MongoDB</li>
+            <li>RabbitMQ</li>
+            <li>ElasticSearch</li>
+            <li>Ubuntu Server</li>
+            <li>Amazon AWS (EC2)</li>
+            <li>Apache Webserver</li>
+            <li>Subversion</li>
+            <li>ASP.NET 3.5, 4.0</li>
+            <li>ASP.NET MVC 3.0</li>
+            <li>C# 3.0, 4.0</li>
+            <li>IIS</li>
+
+        </ul>
+    </div>
+
+    <div class='job'>
+        <h4>June 2010 – May 2011: Senior Web Developer at Zipporah Ltd</h4>
+        <div class="job_img">
+            <img src="{% media_url 'img/Zip-Logo-1.png' %}" />
+        </div>
+
+        <p>
+            Employed by Zipporah as their senior developer in order to re-architect their suite of solutions in order to consolidate disparate functionality,
+            extend functionality and uplift the core technologies. Guided a team of six developers in use of MVC, NHibernate, IoC, unit testing and other
+            techniques to produce better-maintainable software. Liaised with technical director and directly with clients in order to gather and analyse
+            business requirements. Ensured that software is fit for use using continuous integration to build, test, and deploy checked-in software.
+        </p>
+        <ul>
+            <li>C# 4.0</li>
+            <li>.NET 4.0, ASP.NET 4.0</li>
+            <li>ASP.NET MVC 2.0</li>
+            <li>NHibernate 2.1</li>
+            <li>Subversion</li>
+            <li>CruiseControl.NET</li>
+            <li>NAnt</li>
+            <li>Windows Server 2003</li>
+            <li>IIS</li>
+            <li>SQL Service 2000/2005/2008</li>
+        </ul>
+    </div>
+
+    <div class='job'>
+        <h4>April 2007 - June 2010: Software engineer / Applications Support at Avon and Somerset Constabulary</h4>
+        <div class="job_img">
+            <img src="{% media_url 'img/as_logo.gif' %}"/>
+        </div>
+        <p>In-house software developer delivering a variety of complex, secure software mostly using ASP.NET.
+            Main proponent for the introduction of ASP.NET MVC into the team. Architected a comprehensive server monitoring
+            suite along with a set of effective organisation-specific support tools for 1st and 2nd line support teams.</p>
+        <ul>
+            <li>C# 1.0, 2.0, 3.0</li>
+            <li>.NET 1.1, 2.0, 3.5</li>
+            <li>ASP.NET 1.0, 2.0, 3.5</li>
+            <li>ASP.NET MVC 2.0</li>
+            <li>VB.NET 9.0</li>
+            <li>WCF</li>
+            <li>DotNetNuke</li>
+            <li>Windows Server 2000/2003</li>
+            <li>IIS</li>
+            <li>SQL Service 2000/2005/2008</li>
+            <li>Oracle 8i/9i</li>
+            <li>Visual SourceSafe</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

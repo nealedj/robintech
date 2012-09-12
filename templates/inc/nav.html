@@ -1,0 +1,16 @@
+{% load media %}
+{% load helper_tags %}
+<div id="header">
+    <div class="page">
+
+        <a href="/" class="logo">Robin Tech Ltd</a>
+
+        <ul>
+            <li class="{% nav_active core-home %}"><a href="/">Home</a></li>
+            <li class="{% nav_active core-about %}"><a href="{% url core-about %}">About me</a></li>
+            <li class="{% nav_active core-experience %}"><a href="{% url core-experience %}">Experience</a></li>
+            <li class="{% nav_active core-contact %}"><a href="{% url core-contact %}">Contact</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>

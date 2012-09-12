@@ -1,0 +1,8 @@
+<div>
+        {% for info in flash.info %}
+            <div class='alert-info' >{{ info }}</div>
+        {% endfor %}
+        {% for error in flash.error %}
+            <div class='alert-error'>{{ error }}</div>
+        {% endfor %}
+</div>
