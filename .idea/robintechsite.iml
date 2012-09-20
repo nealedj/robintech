@@ -19,12 +19,11 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 2.7.2 (/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Google App Engine SDK" level="project" />
   </component>
   <component name="TemplatesService">
-    <option name="templateLanguage" value="Django" />
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>

@@ -4,7 +4,7 @@
 {% block main_body %}
 
     <div class="header header_home page">
-        <img src="{% media_url 'img/logo.jpg' %}" alt="" class="main_screenshot" width="300" />
+        <img src="{% media_url 'img/logo.png' %}" alt="" class="main_screenshot" width="300" />
 
         <div class="info">
             <h1>David Neale - Web Application Developer</h1>
@@ -18,12 +18,12 @@
 
     </div>
 
-   {% comment %}<div id="home" class="padding">
+   <div id="home" class="padding">
 
         <div id="screenshots">
 
             <div class="section_title">
-                <h3>Screenshots</h3>
+                <h3>Recent work</h3>
             </div>
 
             <a href="javascript:;" class="controls prev">Previous</a>
@@ -32,20 +32,46 @@
                 <div class="items">
                     <!-- Start Screenshot Group 1 -->
                     <ul>
-                        <li><a href="images/screenshots/screen_1.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_1_thumb.jpg" alt="" /></a></li>
-                        <li><a href="images/screenshots/screen_2.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_2_thumb.jpg" alt="" /></a></li>
-                        <li><a href="images/screenshots/screen_3.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_3_thumb.jpg" alt="" /></a></li>
-                        <li><a href="images/screenshots/screen_4.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_4_thumb.jpg" alt="" /></a></li>
-                        <li><a href="images/screenshots/screen_5.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_5_thumb.jpg" alt="" /></a></li>
+                        <li>
+                            <a href="{% media_url 'img/screenshots/engage.png' %}" class="screenshot" rel="group"
+                                    title="<a href='http://www.google.co.uk/ads/engage/'>Google Engage</a> - worked as part of the team responsible for the on-going development of the site.">
+                                <img src="{% media_url 'img/screenshots/engage_thumb.jpg' %}" alt="" />
+                            </a>
+                        </li>
                     </ul>
                     <!-- End Screenshot Group 1 -->
                     <!-- Start Screenshot Group 2 -->
                     <ul>
-                        <li><a href="images/screenshots/screen_1.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_1_thumb.jpg" alt="" /></a></li>
-                        <li><a href="images/screenshots/screen_2.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_2_thumb.jpg" alt="" /></a></li>
-                        <li><a href="images/screenshots/screen_3.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_3_thumb.jpg" alt="" /></a></li>
-                        <li><a href="images/screenshots/screen_4.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_4_thumb.jpg" alt="" /></a></li>
-                        <li><a href="images/screenshots/screen_5.jpg" class="screenshot" rel="group"><img src="images/screenshots/screen_5_thumb.jpg" alt="" /></a></li>
+                        <li>
+                            <a href="{% media_url 'img/screenshots/elections.png' %}" class="screenshot" rel="group"
+                                    title="<a href='http://www.google.com/elections/ed/us/trends'>Google Politics and Elections (Trends)</a> - wrote the backend for the trends section of this site.">
+                                <img src="{% media_url 'img/screenshots/elections_thumb.jpg' %}" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% media_url 'img/screenshots/infosummit.png' %}" class="screenshot" rel="group"
+                                    title="<a href='http://www.youtube.com/infosummit2012'>Google Ideas Info Summit Channel</a> - created custom YouTube channel for this.">
+                                <img src="{% media_url 'img/screenshots/infosummit_thumb.jpg' %}" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% media_url 'img/screenshots/webacademy.png' %}" class="screenshot" rel="group"
+                                    title="<a href='http://www.webacademy.com/'>Google Web Academy</a> - worked on both front and backend of this site. Developed a complex administration site for learning partners to update site content and resources.">
+                                <img src="{% media_url 'img/screenshots/webacademy_thumb.jpg' %}" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% media_url 'img/screenshots/socialinterviews.png' %}" class="screenshot" rel="group"
+                                    title="<a href='http://code.google.com/p/social-interviews/'>YouTube Social Interviews</a> - adapted code from Google WorldView to showcase use of the Google Moderator API.">
+                                <img src="{% media_url 'img/screenshots/socialinterviews_thumb.jpg' %}" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% media_url 'img/screenshots/118.png' %}" class="screenshot" rel="group"
+                                    title="<a href='http://www.118.com/'>118.com</a> - worked on front and backend of this site. Also worked extensively on the search API serving the 118 mobile applications.">
+                                <img src="{% media_url 'img/screenshots/118_thumb.jpg' %}" alt="" />
+                            </a>
+                        </li>
                     </ul>
                     <!-- End Screenshot Group 2 -->
                 </div>
@@ -56,54 +82,7 @@
             <div class="clear"></div>
         </div>
 
-        <div id="features">
-
-            <div class="section_title">
-                <h3>Features &amp; Specs</h3>
-            </div>
-
-            <p>
-                <b>Track tasks, time and more</b>
-                <img src="images/icons/track.gif" alt="" />
-                Lorem ipsum dolor sit amet sit nsectetur adipiscing elit. Nunc et tempus est, a interdum lacus dignissim quis. Nunc pellentesque tempus est, a interdum lacus dignissim quis.
-            </p>
-
-            <p>
-                <b>Always stay on schedule</b>
-                <img src="images/icons/schedule.gif" alt="" />
-                Lorem ipsum dolor sit amet sit nsectetur adipiscing elit. Nunc et tempus est, a interdum lacus dignissim quis. Nunc pellentesque tempus est, a interdum lacus dignissim quis.
-            </p>
-
-            <p class="last">
-                <b>Keep yourself organized</b>
-                <img src="images/icons/organize.gif" alt="" />
-                Lorem ipsum dolor sit amet sit nsectetur adipiscing elit. Nunc et tempus est, a interdum lacus dignissim quis. Nunc pellentesque tempus est, a interdum lacus dignissim quis.
-            </p>
-
-            <div class="clear spacer"></div>
-
-            <p>
-                <b>Track tasks, time and more</b>
-                <img src="images/icons/time.gif" alt="" />
-                Lorem ipsum dolor sit amet sit nsectetur adipiscing elit. Nunc et tempus est, a interdum lacus dignissim quis. Nunc pellentesque tempus est, a interdum lacus dignissim quis.
-            </p>
-
-            <p>
-                <b>Always stay on schedule</b>
-                <img src="images/icons/dude.gif" alt="" />
-                Lorem ipsum dolor sit amet sit nsectetur adipiscing elit. Nunc et tempus est, a interdum lacus dignissim quis. Nunc pellentesque tempus est, a interdum lacus dignissim quis.
-            </p>
-
-            <p class="last">
-                <b>Keep yourself organized</b>
-                <img src="images/icons/task.gif" alt="" />
-                Lorem ipsum dolor sit amet sit nsectetur adipiscing elit. Nunc et tempus est, a interdum lacus dignissim quis. Nunc pellentesque tempus est, a interdum lacus dignissim quis.
-            </p>
-
-            <div class="clear"></div>
-        </div>
-
     </div>
-{% endcomment %}
+
 
 {% endblock %}

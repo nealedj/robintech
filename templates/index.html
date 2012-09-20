@@ -1,17 +1,13 @@
+{% load media %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>  
 	<title>FreshServe - A ThemeForest Theme</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-	<link rel="stylesheet" type="text/css" href="javascripts/fancybox/jquery.fancybox-1.3.1.css" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/teal-orange.css" media="screen" />
-	<script type="text/javascript" src="javascripts/jquery.js"></script>
-	<script type="text/javascript" src="javascripts/jquery.tools.js"></script>
-	<script type="text/javascript" src="javascripts/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
-	<script type="text/javascript" src="javascripts/site.js"></script>
-	<script type="text/javascript" src="javascripts/demo.js"></script>
+    {% include_media 'style_bundle.css' %}
+    {% include_media 'script_bundle.js' %}
+
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function() {
 			// Configure fancybox plugin
