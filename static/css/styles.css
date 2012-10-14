@@ -81,7 +81,7 @@ div#header {
 	div#header a.logo{ 
 		float: left; 
 		margin-top: 18px; 
-		background: url('../img/logo.jpg') no-repeat left;
+		background: url('../img/logo.png') no-repeat left;
         background-size: 50px;
 		width: 264px;
 		height: 80px;

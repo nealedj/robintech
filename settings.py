@@ -1,4 +1,3 @@
-# Django settings for robintechsite project.
 import os
 from django.conf import global_settings
 
@@ -11,6 +10,9 @@ or os.getenv('SETTINGS_MODE') == 'prod'
 
 DEBUG = not PRODUCTION
 TEMPLATE_DEBUG = DEBUG
+
+PROJDIR = os.path.abspath(os.path.dirname(__file__))
+APPDIR = os.path.join(PROJDIR, 'core')
 
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
@@ -95,7 +97,7 @@ MIDDLEWARE_CLASSES = (
     'libs.djangoflash.middleware.FlashMiddleware',
 )
 
-ROOT_URLCONF = 'robintechsite.urls'
+ROOT_URLCONF = 'core.urls'
 
 TEMPLATE_DIRS = ( os.path.join(cur_dir(), 'templates'),)
 
@@ -105,14 +107,14 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-
     'mediagenerator',
-    'robintechsite.core',
+    'core',
+
 )
 
 
 # media generator config
-MEDIA_DEV_MODE = DEBUG
+MEDIA_DEV_MODE = not DEBUG
 DEV_MEDIA_URL = '/devmedia/'
 PRODUCTION_MEDIA_URL = '/static/'
 
@@ -122,8 +124,15 @@ MEDIA_BUNDLES = (
     ('style_bundle.css',
      'css/styles.css',
      'css/teal-orange.css',
-     'css/site.css'
+     'css/site.css',
+     'js/fancybox/jquery.fancybox.css'
         ),
+    ('script_bundle.js',
+        'js/jquery-1.8.0.min.js',
+        'js/jquery.tools.min.js',
+        'js/jquery.mousewheel-3.0.6.pack.js',
+        'js/fancybox/jquery.fancybox.pack.js'
+        )
 
     )
 
@@ -132,8 +141,8 @@ ROOT_MEDIA_FILTERS = {
     'css': 'mediagenerator.filters.yuicompressor.YUICompressor',
     }
 
-YUICOMPRESSOR_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)),
-    '../libs/yuicompressor.jar')
+YUICOMPRESSOR_PATH = os.path.join(os.path.dirname(__file__),
+    'libs/yuicompressor.jar')
 
 TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
-    "robintechsite.core.context_processors.current_section",)
+    "core.context_processors.current_section",)

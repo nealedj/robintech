@@ -2,6 +2,6 @@ from django.conf.urls.defaults import *
 
 urlpatterns = patterns(
     '',
-    (r'', include('robintechsite.urls')),
+    (r'', include('core.urls')),
 )
 
