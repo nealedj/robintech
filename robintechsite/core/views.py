@@ -32,3 +32,6 @@ class ContactView(FormView):
 
 class ExperienceView(TemplateView):
     template_name = 'experience.html'
+
+class SitemapView(TemplateView):
+    template_name = 'sitemap.html'
